@@ -8,7 +8,7 @@ export default function Menu() {
   return (
     <div>
       <ul className='menu'>
-        <NavLink className="link" to='/home'>
+        <NavLink className="link" to='/'>
           A
         </NavLink>
         <NavLink className='link' to='film'>

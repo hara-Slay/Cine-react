@@ -10,18 +10,20 @@ import About from "./pages/About";
 import News from "./pages/News";
 import Search from "./pages/Search";
 import "./App.css";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
     <div>
       <NavBar />
       <Switch>
-        <Route exact path='/film' component={Film} />
-        <Route exact path='/interactive' component={Interactive} />
-        <Route exact path='/theatre' component={Theatre} />
-        <Route exact path='/about' component={About} />
-        <Route exact path='/news' component={News} />
-        <Route exact path='/search' component={Search} />
+        <Route exact path='/' component={Home} />
+        <Route path='/film' component={Film} />
+        <Route path='/interactive' component={Interactive} />
+        <Route path='/theatre' component={Theatre} />
+        <Route path='/about' component={About} />
+        <Route path='/news' component={News} />
+        <Route path='/search' component={Search} />
       </Switch>
     </div>
   );
